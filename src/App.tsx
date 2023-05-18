@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import Contacts from './components/contacts/Contacts';
+import Chat from './components/chat/Chat';
+import ModalPage from './pages/ModalPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper className='App'>
+      <ModalPage />
+      <div className='container'>
+        <div className='col left'>
+          <Contacts />
+        </div>
+        <div className='col right'>
+          <Chat />
+        </div>
+      </div>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  .container {
+    display: flex;
+  }
+  .left {
+    width: 30%;
+  }
+  .right {
+    width: 70%;
+  }
+`;
 
 export default App;
