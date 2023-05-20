@@ -11,7 +11,7 @@ function Modal({ closeModal }: ModalProps) {
     <ModalOverlay>
       <ModalContent>
         <div className='modal-header'>
-          <h2>Please Enter your IdInstance and ApiTokenInstance</h2>
+          <h2>Please enter your IdInstance and ApiTokenInstance</h2>
         </div>
         <div className='modal-body'>
           <CredentialsForm closeModal={closeModal} />
