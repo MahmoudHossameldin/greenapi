@@ -6,3 +6,8 @@ export type MessageType = {
 export type ChatState = {
   [key: number]: MessageType[];
 };
+
+// for catch{} type assertion if needed!
+export type CustomError = Error & {
+  message: string;
+};

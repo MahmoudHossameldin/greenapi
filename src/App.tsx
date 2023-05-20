@@ -23,12 +23,17 @@ function App() {
 const Wrapper = styled.div`
   .container {
     display: flex;
+    height: 100vh;
   }
   .left {
     width: 30%;
   }
   .right {
     width: 70%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
