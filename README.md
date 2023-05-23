@@ -1,3 +1,11 @@
+## инструкция для локального запуска проекта
+Чтобы запустить приложение, сначала клонируйте этот репозиторий локально.
+Затем запустите «npm install», после завершения установки запустите «npm start» и откройте браузер по адресу «http://localhost:3000/».
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
